@@ -23,7 +23,7 @@ Sandboxing is driven by a required policy configuration. There are two ways to p
 
 The policy schema includes:
 
-- `filesystem`: read-only and read-write allow lists, plus optional inclusion of the workdir.
+- `filesystem`: read-only and read-write allow lists, plus optional inclusion of the workdir. Any directories under `read_write` will automatically be created if they do not exist.
 - `network`: mode (`allow`, `block`, `proxy`) and optional proxy configuration.
 - `landlock`: compatibility behavior (`best_effort` or `hard_requirement`).
 - `process`: optional `run_as_user`/`run_as_group` to drop privileges for the child process.

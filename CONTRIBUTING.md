@@ -11,6 +11,18 @@ curl https://mise.run | sh
 
 After installing `mise` be sure to activate the environment by running `mise activate` or [add it to your shell](https://mise.jdx.dev/getting-started.html).
 
+Shell instllation examples:
+
+Fish:
+```bash
+echo '~/.local/bin/mise activate fish | source' >> ~/.config/fish/config.fish
+```
+
+Zsh (Mac OS Default):
+```bash
+echo 'eval "$(~/.local/bin/mise activate zsh)"' >> ~/.zshrc
+```
+
 Project uses Rust 1.88+ and Python 3.12+.
 
 ## Getting started
@@ -33,7 +45,6 @@ nav --help
 
 # Run the sandbox
 mise run sandbox
-
 ```
 
 ## Project Structure
